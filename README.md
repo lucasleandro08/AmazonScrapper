@@ -117,9 +117,9 @@ curl "http://localhost:3000/api/scrape?keyword=notebook"
 
 ## ⚠️ Desafios e Soluções
 
-> **Desafio 1:** Sistema anti-bot da Amazon (erro 503)  
-> **Solução:** Headers realísticos + delays inteligentes + rotação de User-Agents + cache
-> **Desafio 2:** Bloqueios temporários
+> **Desafio 1:** Sistema anti-bot da Amazon (erro 503) <br>
+> **Solução:** Headers realísticos + delays inteligentes + rotação de User-Agents + cache<br>
+> **Desafio 2:** Bloqueios temporários<br>
 > **Solução 2:** Sistema de cache e rate limiting
 
 ## 💡 Como Usar
