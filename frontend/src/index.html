@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Scraper</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">🛒 Amazon Product Scraper</h1>
+            <p class="header__subtitle">Busque produtos na Amazon e veja os resultados organizados</p>
+        </header>
+
+        <main class="main">
+            <section class="search-section">
+                <div class="search-form">
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            id="keyword-input" 
+                            class="search-input"
+                            placeholder="Digite o produto que deseja buscar..."
+                            maxlength="100"
+                            autocomplete="off"
+                        />
+                        <button 
+                            id="search-button" 
+                            class="search-button"
+                            type="button"
+                        >
+                            <span class="button-text">Buscar</span>
+                            <span class="button-loader" style="display: none;">
+                                <div class="spinner"></div>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="search-tips">
+                        <small>💡 Dica: Use palavras-chave específicas para melhores resultados</small>
+                    </div>
+                </div>
+            </section>
+
+            <section class="results-section" id="results-section" style="display: none;">
+                <div class="results-header">
+                    <h2 id="results-title">Resultados da busca</h2>
+                    <div class="results-stats" id="results-stats"></div>
+                </div>
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <section class="error-section" id="error-section" style="display: none;">
+                <div class="error-message">
+                    <div class="error-icon">⚠️</div>
+                    <h3>Oops! Algo deu errado</h3>
+                    <p id="error-text"></p>
+                    <button id="retry-button" class="retry-button">Tentar novamente</button>
+                </div>
+            </section>
+
+            <section class="empty-state" id="empty-state" style="display: none;">
+                <div class="empty-message">
+                    <div class="empty-icon">🔍</div>
+                    <h3>Nenhum produto encontrado</h3>
+                    <p>Tente usar palavras-chave diferentes ou mais específicas.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Amazon Product Scraper.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
