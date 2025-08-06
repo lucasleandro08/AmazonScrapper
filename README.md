@@ -4,12 +4,6 @@
 
 Sistema completo de web scraping para extrair informações de produtos da Amazon Brasil. Desenvolvido com **Bun**, **Express**, **Vite** e **Vanilla JavaScript**, seguindo princípios de **Clean Code** e arquitetura modular.
 
-## ✨ Principais Características
-
-| 🎨 Interface Moderna | ⚡ Performance Otimizada | 🛡️ Tratamento de Erros | 🧹 Clean Architecture |
-|---|---|---|---|
-| Design responsivo com tema Amazon | Cache inteligente e rate limiting | Gerenciamento robusto com fallbacks | Separação clara de responsabilidades |
-
 ## 🛠️ Stack Tecnológica
 
 ### Backend
@@ -24,7 +18,7 @@ Sistema completo de web scraping para extrair informações de produtos da Amazo
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 
-## 🚀 Instalação e Execução
+## Instalação e Execução
 
 > **Pré-requisitos:** Bun >= 1.0.0, Node.js >= 18.0.0, npm
 
@@ -55,7 +49,7 @@ npm run dev
 
 Acesse: http://localhost:5173
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 ### Clean Code Principles Aplicados:
 
@@ -82,7 +76,7 @@ amazon-scraper/<br>
 ├── package.json<br>
 └── vite.config.js<br>
 
-## 🔗 API Endpoints
+## API Endpoints
 
 ### GET /api/scrape
 
@@ -107,7 +101,7 @@ curl "http://localhost:3000/api/scrape?keyword=notebook"
 "cached": false<br>
 }
 
-## ⚙️ Funcionalidades Técnicas
+## Funcionalidades Técnicas
 
 - **Cache Inteligente:** 5 minutos de cache para evitar requisições desnecessárias
 - **Rate Limiting:** 10 segundos mínimos entre buscas diferentes
@@ -115,14 +109,14 @@ curl "http://localhost:3000/api/scrape?keyword=notebook"
 - **Multiple Selectors:** Fallbacks para diferentes layouts da Amazon
 - **Error Recovery:** Tratamento específico para 503, 429 e ECONNREFUSED
 
-## ⚠️ Desafios e Soluções
+## Desafios e Soluções
 
 > **Desafio 1:** Sistema anti-bot da Amazon (erro 503) <br>
 > **Solução:** Headers realísticos + delays inteligentes + rotação de User-Agents + cache<br>
 > **Desafio 2:** Bloqueios temporários<br>
 > **Solução 2:** Sistema de cache e rate limiting
 
-## 💡 Como Usar
+## Como Usar
 
 1. Acesse `http://localhost:5173`
 2. Digite uma palavra-chave (ex: "notebook", "mouse")
