@@ -66,21 +66,21 @@ Acesse: http://localhost:5173
 
 ### Estrutura do Projeto:
 
-amazon-scraper/
-├── backend/
-│ ├── src/
-│ │ ├── controllers/ # HTTP request handling
-│ │ ├── services/ # Business logic & scraping
-│ │ └── utils/ # Error handling & helpers
-│ ├── package.json
-│ └── server.js
-└── frontend/
-├── src/
-│ ├── js/ # Client-side logic
-│ ├── css/ # Responsive styling
-│ └── index.html # Main interface
-├── package.json
-└── vite.config.js
+amazon-scraper/<br>
+├── backend/<br>
+│ ├── src/<br>
+│ │ ├── controllers/ # HTTP request handling<br>
+│ │ ├── services/ # Business logic & scraping<br>
+│ │ └── utils/ # Error handling & helpers<br>
+│ ├── package.json<br>
+│ └── server.js<br>
+└── frontend/<br>
+├── src/<br>
+│ ├── js/ # Client-side logic<br>
+│ ├── css/ # Responsive styling<br>
+│ └── index.html # Main interface<br>
+├── package.json<br>
+└── vite.config.js<br>
 
 ## 🔗 API Endpoints
 
@@ -92,19 +92,19 @@ curl "http://localhost:3000/api/scrape?keyword=notebook"
 
 **Response:**
 {
-"success": true,
-"keyword": "notebook",
-"totalProducts": 16,
-"products": [
-{
-"title": "Notebook Dell Inspiron 15",
-"rating": 4.3,
-"reviewCount": 1250,
-"imageURL": "https://...",
-"price": "R$ 2.499,00"
-}
-],
-"cached": false
+"success": true,<br>
+"keyword": "notebook",<br>
+"totalProducts": 16,<br>
+"products": [<br>
+{<br>
+"title": "Notebook Dell Inspiron 15",<br>
+"rating": 4.3,<br>
+"reviewCount": 1250,<br>
+"imageURL": "https://...",<br>
+"price": "R$ 2.499,00"<br>
+}<br>
+],<br>
+"cached": false<br>
 }
 
 ## ⚙️ Funcionalidades Técnicas
@@ -119,7 +119,7 @@ curl "http://localhost:3000/api/scrape?keyword=notebook"
 
 > **Principal Desafio:** Sistema anti-bot da Amazon (erro 503)  
 > **Solução:** Headers realísticos + delays inteligentes + rotação de User-Agents + cache
-- Bloqueios temporários → Sistema de cache e rate limiting
+> Bloqueios temporários → Sistema de cache e rate limiting
 
 ## 💡 Como Usar
 
