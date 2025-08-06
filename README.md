@@ -30,37 +30,30 @@ Sistema completo de web scraping para extrair informações de produtos da Amazo
 
 ### 1. Clone o Repositório
 
-git clone <repository-url>
+git clone <repository-url> <br>
 cd AmazonScraper
-
-text
 
 ### 2. Configuração do Backend
 
-cd backend
+cd backend<br>
 npm i --save
-
-text
 
 ### 3. Configuração do Frontend
 
-cd ../frontend
+cd ../frontend<br>
 npm i --save
-
-text
 
 ### 4. Execução
 
 Terminal 1 - Backend
-cd backend
+cd backend<br>
 bun server.js
 
 Terminal 2 - Frontend
-cd frontend
+cd frontend<br>
 npm run dev
 
 Acesse: http://localhost:5173
-text
 
 ## 🏗️ Arquitetura
 
@@ -89,8 +82,6 @@ amazon-scraper/
 ├── package.json
 └── vite.config.js
 
-text
-
 ## 🔗 API Endpoints
 
 ### GET /api/scrape
@@ -98,8 +89,6 @@ text
 **Parâmetro:** `keyword` (string, obrigatório)
 
 curl "http://localhost:3000/api/scrape?keyword=notebook"
-
-text
 
 **Response:**
 {
@@ -117,8 +106,6 @@ text
 ],
 "cached": false
 }
-
-text
 
 ## ⚙️ Funcionalidades Técnicas
 
